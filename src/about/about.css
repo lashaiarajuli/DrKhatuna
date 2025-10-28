@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=KoHo:wght@500;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "DM-Merabi_1";
+    src: url("../font/DM-Merabi_1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+.about {
+    background: linear-gradient(90deg, rgb(10, 10, 11) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    padding: 0px 5%;
+    min-width: 350px;
+
+    position: relative;
+  z-index: 1;
+
+   
+}
+
+.about-div {
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    width: 100%;
+    position: relative;
+    padding: 150px 50px 50px 50px;
+
+    /* border: 1px solid #fff; */
+     border-bottom: 1px solid #fff;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.headings h1 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    pointer-events: none;
+
+}
+
+.about-div h1 {
+    color: #a9def9;
+    font-size: 25px;
+}
+
+.about-main-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    gap: 20px;
+    width: 100%;
+    height: 85%;
+}
+
+.about-img {
+    width: 38%;
+}
+
+.about-img img {
+    width: 400px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 20px 20px 5px 20px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.fool {
+    width: 59%;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wight {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.fool .ertad {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ertad h3 {
+    color: #fff;
+}
+
+.fool .ertad .social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.fool .ertad .social-media>* {
+    font-size: 20px;
+    color: #e1e2de;
+    color: #e9c46a;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-main-info .about-img img {
+    width: 400px;
+}
+
+
+
+
+
+
+.sentenses p {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-shadow: 5px 4px 50px #333;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+.sentenses {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+}
+
+.sentenses ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sentenses ul li {
+    list-style-type: circle;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+/* Responsive ------------------------------------------- */
+
+@media (max-width: 1300px) {
+    .headings h1 {
+        font-size: 22px;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .sentenses .main {
+        font-size: 21px;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .about-div {
+        gap: 90px;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .sentenses .main {
+        font-size: 18px;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .sentenses .experience-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sentenses .experience-list li {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .sentenses .education-list li {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .sentenses .main {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .about {
+        height: auto;
+    }
+
+    .about-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 80px 80px 50px 80px;
+    }
+
+    .about-img img {
+        width: 400px;
+    }
+
+    .headings {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .about-div .navigation-nav {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    .sentenses .main {
+        font-size: 20px;
+        /* border: 1px solid #fff; */
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-div {
+        
+        padding: 90px 50px 40px;
+    }
+
+    .sentenses .main {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+
+
+
+    
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .headings {
+        width: 90%;
+        flex-direction: column;
+        /* gap: 30px */
+    }
+
+    .about-div .navigation-nav {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .sentenses .main {
+        text-align: center;
+        font-size: 15px;
+        /* border: 1px solid #fff; */
+
+
+    }
+
+    .about-div {
+        
+        padding: 90px 90px 40px 90px;
+    }
+
+    .sentenses .education-list li {
+        font-size: 10px;
+
+    }
+
+  
+
+    .sentenses .experience-list li {
+        font-size: 10px;
+
+    }
+
+    .headings {
+        width: 150%;
+    }
+}
+
+@media (max-width: 380px){
+        .about-div {
+        
+        padding: 90px 70px 40px 70px;
+    }
+}

@@ -1,0 +1,108 @@
+/* contact section ---------------------------------------------------------------------------------------- */
+
+.footer {
+    /* padding: 0 11%; */
+    /* margin-top: 20px; */
+    background: linear-gradient(90deg, rgb(10, 10, 11) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    padding: 5px 0 5px 0;
+    min-width: 350px;
+}
+
+.footer .box-container {
+    display: flex;
+    background-color: #DAE7EF;
+    gap: 5rem;
+}
+
+.footer .box-container>* {
+    width: 48%;
+}
+
+.map {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-content {
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.footer .box-container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.github {
+    color: black;
+}
+
+.linkedin {
+    color: #0A66C2;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.footer .box-container .box h3 {
+    color: var(--color-main);
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+   
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
+footer .footer-icons>* {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .footer-icons>*:hover {
+    transform: scale(1.1);
+}
+
+
+.footer .credit {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+    color: #ccc;
+
+    font-size: 10px;
+}
+
+.footer .credit span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer h1 {
+    font-size: 12px;
+}

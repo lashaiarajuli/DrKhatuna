@@ -1,0 +1,137 @@
+.contact-section {
+  /* min-width: 600px; */
+  /* margin: 60px auto; */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  background-color: #ede0d4;
+
+  width: 80%;
+  height: 100%;
+
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 23px;
+  color: #249ea0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #333;
+  color: #249ea0;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  background-color: #249ea0;
+  border: none;
+  outline: none;
+  width: 150px;
+  align-self: flex-end;
+  padding: 7px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Responsive ------------------------------------------------------ */
+
+@media (max-width: 1300px) {
+  .contact-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact-section {
+    width: 100%;
+  }
+
+  /* ------------------------------ */
+
+  .contact-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .contact-form {
+    gap: 2px;
+  }
+
+  label {
+    margin-bottom: 2px;
+    font-size: 11px;
+  }
+
+  
+}
+
+@media (max-width: 720px){
+    .contact-section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px){
+    .contact-section {
+    width: 90%;
+    padding: 10px;
+  }
+
+  /* ------------------------------ */
+
+  .contact-section h2 {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .contact-section button{
+    font-size: 12px;
+    margin-top: 5px;
+    width: 110px;
+  }
+
+  .contact-form {
+    gap: 1px;
+  }
+
+  label {
+    margin-bottom: 2px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px){
+    .contact-section {
+    width: 100%;
+  }
+}
