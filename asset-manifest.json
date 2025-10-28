@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DrKhatuna/static/css/main.b02bffa0.css",
-    "main.js": "/DrKhatuna/static/js/main.789dac22.js",
+    "main.js": "/DrKhatuna/static/js/main.8a2cb758.js",
     "static/js/453.d7a28cc7.chunk.js": "/DrKhatuna/static/js/453.d7a28cc7.chunk.js",
     "static/media/xat7.png": "/DrKhatuna/static/media/xat7.6b5cba764dd85c0e0d35.png",
     "static/media/user12.png": "/DrKhatuna/static/media/user12.7e088efb56c8529ba1a3.png",
@@ -13,11 +13,11 @@
     "static/media/DM-Merabi_1.ttf": "/DrKhatuna/static/media/DM-Merabi_1.f391a6a87806c7e28b1f.ttf",
     "index.html": "/DrKhatuna/index.html",
     "main.b02bffa0.css.map": "/DrKhatuna/static/css/main.b02bffa0.css.map",
-    "main.789dac22.js.map": "/DrKhatuna/static/js/main.789dac22.js.map",
+    "main.8a2cb758.js.map": "/DrKhatuna/static/js/main.8a2cb758.js.map",
     "453.d7a28cc7.chunk.js.map": "/DrKhatuna/static/js/453.d7a28cc7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b02bffa0.css",
-    "static/js/main.789dac22.js"
+    "static/js/main.8a2cb758.js"
   ]
 }
