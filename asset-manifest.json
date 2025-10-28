@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/DrKhatuna/static/css/main.b02bffa0.css",
+    "main.js": "/DrKhatuna/static/js/main.7e68ed38.js",
+    "static/js/453.d7a28cc7.chunk.js": "/DrKhatuna/static/js/453.d7a28cc7.chunk.js",
+    "static/media/xat7.png": "/DrKhatuna/static/media/xat7.6b5cba764dd85c0e0d35.png",
+    "static/media/user12.png": "/DrKhatuna/static/media/user12.7e088efb56c8529ba1a3.png",
+    "static/media/hop.png": "/DrKhatuna/static/media/hop.26e2836b4f0df9ee3a19.png",
+    "static/media/xato8.png": "/DrKhatuna/static/media/xato8.db60bbbda405256ae04f.png",
+    "static/media/user10.jpg": "/DrKhatuna/static/media/user10.4fb3bb666c4feb2e438a.jpg",
+    "static/media/contact-img.png": "/DrKhatuna/static/media/contact-img.637b27b7cbc066824a89.png",
+    "static/media/user11.jpg": "/DrKhatuna/static/media/user11.4603f16d75a59309b0f5.jpg",
+    "static/media/DM-Merabi_1.ttf": "/DrKhatuna/static/media/DM-Merabi_1.f391a6a87806c7e28b1f.ttf",
+    "index.html": "/DrKhatuna/index.html",
+    "main.b02bffa0.css.map": "/DrKhatuna/static/css/main.b02bffa0.css.map",
+    "main.7e68ed38.js.map": "/DrKhatuna/static/js/main.7e68ed38.js.map",
+    "453.d7a28cc7.chunk.js.map": "/DrKhatuna/static/js/453.d7a28cc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b02bffa0.css",
+    "static/js/main.7e68ed38.js"
+  ]
+}
