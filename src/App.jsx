@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+
 import { Header } from './header/Header';
 import { Home } from './home/Home.jsx';
 import { About } from './about/About.jsx';
@@ -9,24 +9,21 @@ import { Small } from './small/Small.jsx';
 import { Contact } from './contact/Contact.jsx';
 import { Footer } from './footer/Footer.jsx';
 
+import { HashRouter } from "react-router-dom";
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div >
-        <Header />
-        <Home />
-        <About />
-        <Service />
-        <Small />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </div>
-    </BrowserRouter >
-
-    
+    <HashRouter>
+      <Header />
+      <Home />
+      <About />
+      <Service />
+      <Small />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </HashRouter>
   );
 }
 
