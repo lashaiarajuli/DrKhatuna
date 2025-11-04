@@ -1,29 +1,32 @@
 import './App.css';
-import {Header} from './header/Header';
-import {Home} from './home/Home.jsx';
-import {About} from './about/About.jsx';
-import {Service} from './services/Service.jsx'
-import {Testimonials} from './testimonials/Tesimonials.jsx';
-import{Small} from './small/Small.jsx';
-import{Contact} from './contact/Contact.jsx';
-import {Footer} from './footer/Footer.jsx';
+import { BrowserRouter} from 'react-router-dom';
+import { Header } from './header/Header';
+import { Home } from './home/Home.jsx';
+import { About } from './about/About.jsx';
+import { Service } from './services/Service.jsx'
+import { Testimonials } from './testimonials/Tesimonials.jsx';
+import { Small } from './small/Small.jsx';
+import { Contact } from './contact/Contact.jsx';
+import { Footer } from './footer/Footer.jsx';
 
 
 
 function App() {
   return (
-    <div >
-      <Header />
-      <Home />
-      <About />
-      <Service />
-      <Small />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
-  );
+    <BrowserRouter>
+      <div >
+        <Header />
+        <Home />
+        <About />
+        <Service />
+        <Small />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+      </BrowserRouter >
+      );
 }
 
-export default App;
+      export default App;
 

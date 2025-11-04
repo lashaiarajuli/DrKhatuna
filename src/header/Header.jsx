@@ -20,7 +20,7 @@ export function Header() {
             <RiCloseLargeLine
                 className={`close ${isOpen ? "show" : ""}`}
                 onClick={toggleMenu}
-            />y
+            />
 
             <nav className={isOpen ? "nav-open" : ""}>
                 <a href="#home">მთავარი</a>

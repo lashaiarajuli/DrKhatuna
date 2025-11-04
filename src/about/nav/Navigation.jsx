@@ -1,44 +1,38 @@
-// import { Link } from 'react-router-dom';
-// import './navigation.css';
-
-// export function Navigation() {
-//     return (
-//         <nav className='navigation-nav'>
-//             <li><Link to="main">მთავარი</Link></li>
-//             <li><Link to="education">განათლება</Link></li>
-//             <li><Link to="experience">გამოცდილება</Link></li>
-//         </nav>
-//     );
-// }
-
-
-import { NavLink } from 'react-router-dom';
 import './navigation.css';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export function Navigation() {
+  const location = useLocation();
+
+  // Determine if we're on main tab
+  const isMainActive =
+    location.pathname === "/" ||
+    location.pathname === "/DrKhatuna" ||
+    location.pathname === "/DrKhatuna/";
+
   return (
     <nav className="navigation-nav">
       <ul>
         <li>
-          <NavLink 
-            to="main" 
-            className={({ isActive }) => (isActive ? "active" : "")}
+          <NavLink
+            to="."
             end
+            className={isMainActive ? "active" : ""}
           >
             მთავარი
           </NavLink>
         </li>
         <li>
-          <NavLink 
-            to="education" 
+          <NavLink
+            to="education"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             განათლება
           </NavLink>
         </li>
         <li>
-          <NavLink 
-            to="experience" 
+          <NavLink
+            to="experience"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             გამოცდილება
@@ -48,7 +42,3 @@ export function Navigation() {
     </nav>
   );
 }
-
-
-
-

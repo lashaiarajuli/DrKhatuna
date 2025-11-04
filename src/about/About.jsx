@@ -1,47 +1,39 @@
 import './about.css';
 import xatoAbout from '../photos/xato8.png';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { Navigation } from './nav/Navigation.jsx';
 import { MainInfo } from './nav/MainInfo.jsx';
 import { Education } from './nav/Education.jsx';
 import { Experience } from './nav/Experience.jsx';
 
 export function About() {
-    return (
-        <div className="about" id="about">
-            <div className="about-div">
-                <BrowserRouter>
+  const [activeTab, setActiveTab] = useState("main");
 
-                    <div className="about-img">
-                        <img src={xatoAbout} alt="" />
-                    </div>
+  // Ensure default stays “main” even on refresh
+  useEffect(() => {
+    setActiveTab("main");
+  }, []);
 
-                    <div className="headings">
-                        <h1>ჩემს შესახებ</h1>
-                        <Navigation />
-
-
-                        <div className="sentenses">
-                            {/* <Routes>
-                                <Route path="/main" element={<MainInfo />} />
-                                <Route path="/education" element={<Education />} />
-                                <Route path="/experience" element={<Experience />} />
-                        
-                            </Routes> */}
-
-                            <Routes>
-                                <Route index element={<MainInfo />} />  {/* default */}
-                                <Route path="main" element={<MainInfo />} />
-                                <Route path="education" element={<Education />} />
-                                <Route path="experience" element={<Experience />} />
-                            </Routes>
-                        </div>
-                    </div>
-
-
-
-                </BrowserRouter>
-            </div>
+  return (
+    <div className="about" id="about">
+      <div className="about-div">
+        <div className="about-img">
+          <img src={xatoAbout} alt="" />
         </div>
-    );
-}
+
+        <div className="headings">
+          <h1>ჩემს შესახებ</h1>
+
+          {/* Pass state to Navigation */}
+          <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+
+          <div className="sentenses">
+            {activeTab === "main" && <MainInfo />}
+            {activeTab === "education" && <Education />}
+            {activeTab === "experience" && <Experience />}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
