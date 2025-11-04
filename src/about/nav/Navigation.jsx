@@ -5,10 +5,12 @@ export function Navigation() {
   const location = useLocation();
 
   // Determine if we're on main tab
-  const isMainActive =
-    location.pathname === "/" ||
-    location.pathname === "/DrKhatuna" ||
-    location.pathname === "/DrKhatuna/";
+  // const isMainActive =
+  //   location.pathname === "/" ||
+  //   location.pathname === "/DrKhatuna" ||
+  //   location.pathname === "/DrKhatuna/";
+
+    const isMainActive = location.pathname === "/" || location.pathname === "/DrKhatuna";
 
   return (
     <nav className="navigation-nav">

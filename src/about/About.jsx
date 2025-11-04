@@ -1,19 +1,12 @@
 import './about.css';
 import xatoAbout from '../photos/xato8.png';
-import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Navigation } from './nav/Navigation.jsx';
 import { MainInfo } from './nav/MainInfo.jsx';
 import { Education } from './nav/Education.jsx';
 import { Experience } from './nav/Experience.jsx';
 
 export function About() {
-  const [activeTab, setActiveTab] = useState("main");
-
-  // Ensure default stays “main” even on refresh
-  useEffect(() => {
-    setActiveTab("main");
-  }, []);
-
   return (
     <div className="about" id="about">
       <div className="about-div">
@@ -24,16 +17,26 @@ export function About() {
         <div className="headings">
           <h1>ჩემს შესახებ</h1>
 
-          {/* Pass state to Navigation */}
-          <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+          <Navigation />
 
           <div className="sentenses">
-            {activeTab === "main" && <MainInfo />}
-            {activeTab === "education" && <Education />}
-            {activeTab === "experience" && <Experience />}
+            {/* <Routes>
+              <Route index element={<MainInfo />} />
+              <Route path="education" element={<Education />} />
+              <Route path="experience" element={<Experience />} />
+            </Routes> */}
+
+            <Routes>
+  <Route path="/" element={<MainInfo />} />
+  <Route path="/DrKhatuna" element={<MainInfo />} />
+  <Route path="education" element={<Education />} />
+  <Route path="experience" element={<Experience />} />
+</Routes>
+
+            
           </div>
         </div>
       </div>
     </div>
   );
-};
+}

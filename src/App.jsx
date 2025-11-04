@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Header } from './header/Header';
 import { Home } from './home/Home.jsx';
 import { About } from './about/About.jsx';
@@ -24,9 +24,11 @@ function App() {
         <Contact />
         <Footer />
       </div>
-      </BrowserRouter >
-      );
+    </BrowserRouter >
+
+    
+  );
 }
 
-      export default App;
+export default App;
 
